@@ -1,24 +1,24 @@
 from django.shortcuts import render
-from .models import Projects
+from mdcore.models import Projects
 
 # Create your views here.
 def index(request):
 
     proj1 = Projects()
     proj1.name = 'Point of sale'
-    proj1.desc = 'hey'
+    proj1.desc = 'POS system software empowers retailers with a user-friendly interface that aims to deliver seamless retail experiences.'
 
     proj2 = Projects()
-    proj2.name = 'Manage Tenant'
-    proj2.desc = 'hey'
+    proj2.name = 'Weighbridge Management'
+    proj2.desc = 'Weight scaling Integration to the Weighbridge machine used to track net weight in trade and manufacturing units'
 
     proj3 = Projects()
-    proj3.name = 'Crusher Software'
-    proj3.desc = 'hey'
+    proj3.name = 'E-Commerce'
+    proj3.desc = 'A cloud-based application to facilitate fast, accurate, reliable and easy accessibility web application'
 
     proj4 = Projects()
-    proj4.name = 'abc'
-    proj4.desc = 'hey'
+    proj4.name = 'Cooperative Society Application'
+    proj4.desc = 'Featuring Share accounts, Saving accounts, Fixed Deposit, Loan account, Pigmy deposit, Day book, Advisor Registration, Member Registration'
 
 
 
